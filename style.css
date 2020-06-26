@@ -9,15 +9,16 @@ body {
   font-weight: 400;
   line-height: 1.5;
 
-  
+
 }
 
 .heading {
   text-align: center;
   margin-bottom: 1em;
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   color:#3ca59d;
-  
+  font-family: 'Indie Flower', cursive;
+
 }
 
 
@@ -26,6 +27,7 @@ body {
   padding:1em 2em;
   border:1px solid gray;
   background-color: #a2de96;
+  box-shadow: 8px 8px 8px gray;
 }
 
 /*larger screens move to center in a column */
@@ -35,15 +37,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
     }
     input {
       min-width: 350px;
     }
-  
-  
-    
+
+
+
   }
-  
+
 
 
 
@@ -62,8 +67,8 @@ body {
   margin-bottom: 1em;
   height:30px;
   text-align: left;
-  
-  
+
+
 }
 /* box shadow for input box */
 
@@ -90,12 +95,29 @@ body {
     background-color:#d6efc7;
 }
 
+
+
+
+/*select box for tip percentage*/
+
+select  {
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.tip-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+
 /* text output for calculating bill */
 
 #output {
   font-size: 1.2rem;
-  
+
 
 }
-
-
