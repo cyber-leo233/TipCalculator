@@ -15,22 +15,25 @@
   <div class="calculator">
     <h1 class="heading">E-Z Tip Calculator</h1>
 
-    <div class="bill-container">
-      <label for="bill" class="bill-label">Enter Bill Amount:</label>
-      <input type="number" placeholder="Enter Numbers Only" name='bill' id='bill-amount'>
+    <div class="middle-border">
+      <div class="bill-container">
+        <label for="bill" class="bill-label">Enter Bill Amount:</label>
+        <input type="number" placeholder="Enter Numbers Only" name='bill' id='bill-amount'>
 
+      </div>
+
+      <div class="tip-container">
+        <label for="tip">Select Tip percentage:</label>
+        <select name="tip" class="percent">
+          <option value="10%">10%</option>
+          <option value="15%">15%</option>
+          <option value="20%">20%</option>
+          <option value="30%">30%</option>
+        </select>
+
+      </div>
     </div>
 
-    <div class="tip-container">
-      <label for="tip">Select Tip percentage:</label>
-      <select name="tip"class="percent">
-        <option value="10%">10%</option>
-        <option value="15%">15%</option>
-        <option value="20%">20%</option>
-        <option value="30%">30%</option>
-      </select>
-
-    </div>
     <button class="btn">Calculate</button>
 
     <p id="output"></p>
@@ -44,7 +47,7 @@
 
 
 
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

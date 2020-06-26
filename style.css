@@ -49,6 +49,11 @@ body {
 
   }
 
+  .middle-border {
+    border: 2px solid #3ca59d;
+    padding:1em;
+  }
+
 
 
 
