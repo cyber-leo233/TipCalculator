@@ -26,19 +26,28 @@ function calculateBill () {
   let total = (billAmount+tip).toFixed(2);
   text.innerHTML = `Tip amount: \$${tip.toFixed(2)}<br> Total Bill:\$${total}`;
   bill.value = '';
+  setTimeout(function () {
+    text.innerHTML = "";
+  },10000)
   
   
 
 }
 function processing () {
-   $('.bill-container').hide();
-   $('.tip-container').hide();
+  let hideBill =  $('.bill-container').hide();
+   let hideTip = $('.tip-container').hide();
    
     $("#output").text('processing...')
     setTimeout(function (){
         calculateBill();
     },2000)
+    setTimeout(function(){
+      hideBill.show();
+      hideTip.show();
+    },8000)
     
+    
+
 
     
 }
