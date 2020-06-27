@@ -2,10 +2,19 @@
 let text = document.querySelector('#output');
 const bill = document.querySelector('#bill-amount');
 
-//event listener
-document.querySelector('.btn').addEventListener('click',calculateBill);
 
-//function
+loadAllEventListeners()
+//event listener
+function loadAllEventListeners () {
+
+$('.btn').click(processing);
+
+
+}
+
+//functions
+
+
 
 function calculateBill () {
 
@@ -21,6 +30,20 @@ function calculateBill () {
   
 
 }
+function processing () {
+   $('.bill-container').hide();
+   $('.tip-container').hide();
+   
+    $("#output").text('processing...')
+    setTimeout(function (){
+        calculateBill();
+    },2000)
+    
+
+    
+}
+
+
 
 
 
